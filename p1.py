@@ -31,7 +31,7 @@ ax.plot(t.flatten(),s); ax.set(xlabel='Tiempo [s]' ,ylabel= 'Amplitud', title= '
 plt.show(block=False)
 fig.savefig('C:\\Users\\Mouzhroq\\Desktop\\Python\\MCIB\\p1f2.png')
 
-s2 = (8)*np.sum((1/f**2)*(np.cos(2*np.pi*f*fr*t)), axis=0)
+s2 = (8/np.pi**2)*np.sum((1/f**2)*(np.cos(2*np.pi*f*fr*t)), axis=0)
 fig, ax = plt.subplots()
 ax.plot(t.flatten(), s2); ax.set(xlabel='Tiempo [s]' ,ylabel= 'Amplitud', title= 'Aproximación de una señal triangular')
 
